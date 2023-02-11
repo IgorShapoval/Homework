@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #070707;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.background {
+    background-color: #F6F6F6;
+}
+
+.header_nav {
+    border-bottom: 1px solid #828282;
+}
+
+.nav_list {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_item {
+    padding: 20px;
+    color: #828282;
+}
+
+.nav_list .nav_item:hover, 
+.nav_list .nav_item:focus {
+    color:#070707;
+}
+
+.main_title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.35;
+    margin-top: 12px;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.35;
+}
+
+.about_title {
+    margin-bottom: 50px;
+}
+
+.about_text {
+    margin-bottom: 30px;
+}
+
+.skills_title {
+    margin-bottom: 20px;
+}
+
+.skills_text {
+    margin-bottom: 50px;
+}
+
+.skills_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill_logo {
+    margin-bottom: 25px;
+    padding-right: 45px;
+    padding-left: 45px;
+}
+
+.skills_item_text {
+    margin-bottom: 60px;
+}
+
+.skills_item_text--figma{
+    margin-bottom: 80px;
+}
+
+.star_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.black_star {
+    fill: #070707;
+}
+
+.portfolio_title {
+    margin-bottom: 50px;
+}
+
+.portfolio_img {
+    margin-bottom: 40px;
+}
+
+.portfolio_link {
+    display: block;
+    text-decoration: underline;
+    color: #070707;
+}
+
+.portfolio_link--margin {
+    margin-bottom: 70px;
+}
+
+.footer_title {
+    margin-bottom: 20px;
+}
+
+.footer_text {
+    margin-bottom: 60px;
+}
+
+.footer_button {
+    color: #FFFFFF;
+    background-color: #070707;
+    width: 180px;
+    font-weight: 700;
+    padding: 10px 16px;
+    border-radius: 22px;
+    margin-bottom: 30px;
+}
+
+.footer_list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.footer_item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.footer_link_text {
+    color: #828282;
+}
+
+.footer_link {
+    color: #828282;
+}
