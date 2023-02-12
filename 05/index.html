@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Form</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <form action="">
+                <label class="label" for="fullName">
+                    Full name
+                    <input type="text" name="fullName" id="fullName" required>
+                </label>
+
+                <label class="label" for="email">
+                    Email
+                    <input type="email" name="email" id="email" required>
+                </label>
+
+                <label class="label" for="password">
+                    Password
+                    <input type="password" name="password" id="password" required>
+                </label>
+
+                <label class="label" for="passwordAgain">
+                    Password again
+                    <input type="password" name="password" id="passwordAgain" required>
+                </label>
+
+                <p class="radio_text">Choice of gender:</p>
+
+                <label class="radio_label radio_label--margin">
+                    <input type="radio" name="gender" value="man" required>
+                    Man
+                </label>
+
+                <label class="radio_label">
+                    <input type="radio" name="gender" value="women" required>
+                    Woman
+                </label>
+
+                <label class="label" for="age">
+                    Age
+                    <input type="number" name="age" id="age" required>
+                </label>
+
+                <label class="label" for="course">
+                    Course
+                    <select class="course_select" name="course" id="course">
+                        <option value="">Choice course</option>
+                        <option value="frontEnd">Front-End</option>
+                        <option value="backEnd">Back-End</option>
+                        <option value="projectManagement">Project Management</option>
+                        <option value="qaManual">QA Manual</option>
+                    </select>
+                </label>
+
+                <label class="label" for="address">
+                    Address
+                    <textarea name="address" id="address" cols="20" rows="5" placeholder="Country, region, city/ village, street"></textarea>
+                </label>
+
+                <label class="agree_label" for="agree">
+                    <input type="checkbox" name="agree" id="agree" required>
+                    I agree with the terms of confidentiality
+                </label>
+
+                <div class="btn_grup">
+                    <button class="btn btn--margin" type="reset">Reset form</button>
+                    <button class="btn" type="submit">Submit form</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+</body>
+</html>
