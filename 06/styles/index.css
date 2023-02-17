@@ -18,7 +18,8 @@ body {
 }
 
 .container {
-    width: 793px;
+    width: 90%;
+    max-width: 793px;
     margin: 0 auto;
 }
 
@@ -29,6 +30,7 @@ body {
     text-align: center;
     padding: 19px 0 12px 0;
     background-color: #4A4F56;
+    margin-bottom: 20px;
 }
 
 .main_title {
@@ -44,14 +46,18 @@ body {
 /* Main */
 
 .shopping_list {
-    padding: 20px 130px 45px 130px;
+    width: 90%;
+    max-width: 534px;
+    margin: 0 auto;
+    margin-bottom: 45px;
 }
 
 .shopping_item {
     width: 534px;
+    max-width: 534px;
     display: flex;
     align-items: center;
-    padding: 11px 0 12px 13px;
+    /* padding: 11px 0 12px 13px; */
     background-color: #88839E;
 }
 
@@ -70,39 +76,58 @@ body {
     transition: all .1s ease-in;
 }
 
-.shopping_item:nth-child(1) > label::after {
-    content: '(for the next lessons about CSS)';
+.shopping_text {
     font-size: 11px;
 }
 
-.shopping_item:nth-child(2) > label::after {
-    content: '(for more CSS manipulations)';
-    font-size: 11px;
+.shopping_text::after {
+    content: ')';
 }
 
-.shopping_item:nth-child(3) > label::after {
-    content: '(because they are awesome)';
-    font-size: 11px;
-}
-
-.shopping_item:nth-child(4) > label::after {
-    content: '(hm... they always dissapear)';
-    font-size: 11px;
-}
-
-.shopping_item:last-child > label::after {
-    content: '(for my friends)';
-    font-size: 11px;
+.shopping_text::before {
+    content: '(';
 }
 
 .shopping_item label {
+    position: relative;
     display: flex;
     align-items: center;
+    padding-top: 11px;
+    padding-left: 40px;
+    padding-right: 180px;
+    padding-bottom: 13px;
+    width: 550px;
 }
 
 .shopping_item span {
     margin-right: 3px;
 }
+
+.shopping_item label::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    vertical-align: middle;
+    transition: 0.2s;
+    left: 10px;
+}
+
+.shopping_item label::after {
+    content: '';
+    position: absolute;
+    display: none;
+    width: 9px;
+    height: 5px;
+    border-left: 5px solid #000;
+    border-bottom: 5px solid #000;
+    transform: rotate(-45deg);
+    left: 13px;
+    top: 15px
+}
+
 
 input[type="checkbox"] {
     width: 19px;
@@ -114,9 +139,17 @@ input[type="checkbox"]:checked + label {
     text-decoration: line-through;
 }
 
+input[type="checkbox"]:checked + label::after {
+    display: block;
+}
+
 
 .shopping_item:active > input:checked {
     text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+    display: none;
 }
 
 /* input[type="checkbox"]:checked {
