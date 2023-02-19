@@ -1,0 +1,163 @@
+:root {
+    --main-text-color: #544837;
+    --secondary-text-color: #2F281E;
+    --orange-color: #FF9900;
+    --white-color: #FFFFFF;
+    --border-color: #BCD0E5;
+
+    --main-font-size: 16px;
+    --title-font-size: 36px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--main-font-size);
+    font-weight: 500;
+    color: var(--main-text-color);
+    background-color: var(--white-color);
+    line-height: 1.62;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    vertical-align: top;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__icon {
+    margin-right: 13px;
+}
+
+.logo__icon-productly {
+    padding-top: 7px;   
+}
+
+/* Button */
+
+.btn {
+    padding: 13px 26px;
+    font-size: var(--main-font-size);
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    color: var(--white-color);
+    background-color: var(--orange-color);
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--white-color);
+    color: var(--secondary-text-color);
+    border: 1px solid var(--border-color);
+    transition: all 0.4s;
+}
+
+/* Header */
+
+.page-header {
+    height: 80px;
+}
+
+.page-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    padding: 26px 0;
+}
+
+.nav__link {
+    font-weight: 400;
+    color: var(--secondary-text-color);
+    padding: 26px 0;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    color: var(--orange-color);
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.page-header__btn-box {
+    display: flex;
+    width: 252px;
+    justify-content: space-between;
+}
+
+.page-header__btn {
+    background-color: var(--white-color);
+    color: var(--secondary-text-color);
+    border: 1px solid var(--border-color);
+}
+
+.page-header__btn:hover,
+.page-header__btn:focus {
+    color: var(--white-color);
+    background-color: var(--orange-color);
+}
+
+/* Hero */
+
+.hero__container {
+    display: flex;
+    padding-top: 70px;
+}
+
+.hero__info {
+    padding: 97px 0;
+    margin-right: 56px;
+}
+
+.hero_title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.23;
+    margin-bottom: 30px;
+}
+
+.hero__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.55;
+    margin-bottom: 20px;
+}
+
+.hero__btn {
+    padding: 12px 44px;
+}
