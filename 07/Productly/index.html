@@ -1,61 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
     <title>Productly</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="page-header">
-        <div class="container page-header__container">
-            <a class="logo" href="./index.html">
-                <img class="logo__icon" src="./img/icons/logo.png" alt="logo">
-                <img class="logo__icon-productly" src="./img/icons/logo-productly.png" alt="logo-productly">
-            </a>
+      <div class="container page-header__container">
+        <a class="logo" href="./index.html">
+          <img class="logo__icon" src="./img/icons/logo.png" alt="logo" />
+          <img
+            class="logo__icon-productly"
+            src="./img/icons/logo-productly.png"
+            alt="logo-productly"
+          />
+        </a>
 
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a class="nav__link" href="">Product</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="">Customers</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="">Pricing</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="">Resources</a>
-                    </li>
-                </ul>
-            </nav>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="">Product</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Customers</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Pricing</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Resources</a>
+            </li>
+          </ul>
+        </nav>
 
-            <div class="page-header__btn-box">
-                <button class="btn page-header__btn" type="button">Sign In</button>
-                <button class="btn" type="button">Sign Up</button>
-            </div>
+        <div class="page-header__btn-box">
+          <button class="btn page-header__btn" type="button">Sign In</button>
+          <button class="btn" type="button">Sign Up</button>
         </div>
+      </div>
     </header>
 
     <main>
-        <div class="hero">
-            <div class="container hero__container">
-                <div class="hero__info">
-                    <h1 class="hero__title">The Design Thinking superpowers</h1>
-                    <p class="hero__text">
-                        Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user
-                    experience.
-                    </p>
-                    <button class="btn hero__btn" type="button">Get started</button>
-                </div>
-                <img src="./img/hero-img.jpg" alt="happy people">
-            </div>
+      <div class="hero">
+        <div class="container hero__container">
+          <div class="hero__info">
+            <h1 class="hero__title">The Design Thinking superpowers</h1>
+            <p class="hero__text">
+              Tools, tutorials, design and innovation experts, all in one place! The most intuitive
+              way to imagine your next user experience.
+            </p>
+            <button class="btn hero__btn" type="button">Get started</button>
+          </div>
+          <img src="./img/hero-img.jpg" alt="happy people" />
         </div>
+      </div>
+
+      <section class="section features">
+        <div class="container">
+          <h2 class="title features__title">We design tools to unveil your superpowers</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <img class="features_icon" src="./img/icons/arrow-icon.png" alt="arrow-icon" />
+              <h3 class="features__subtitle">First click tests</h3>
+              <p>While most people enjoy casino gambling,</p>
+            </li>
+            <li class="features__item">
+              <img class="features_icon" src="./img/icons/wave-icon.png" alt="wave-icon" />
+              <h3 class="features__subtitle">Design surveys</h3>
+              <p>Sports betting, lottery and bingo playing for the fun</p>
+            </li>
+            <li class="features__item">
+              <img
+                class="features_icon"
+                src="./img/icons/hourglass-icon.png"
+                alt="hourglass-icon"
+              />
+              <h3 class="features__subtitle">Preference tests</h3>
+              <p>The Myspace page defines the individual.</p>
+            </li>
+            <li class="features__item">
+              <img class="features_icon" src="./img/icons/heart-icon.png" alt="heart-icon" />
+              <h3 class="features__subtitle">Five second tests</h3>
+              <p>Personal choices and the overall personality of the person.</p>
+            </li>
+          </ul>
+          <button class="btn features__btn" type="button">Sign up Now</button>
+        </div>
+      </section>
     </main>
-</body>
+
+    <footer class="page-footer">
+      <div class="container page-footer__container">
+        <a href="" class="logo page-footer__logo">
+          <img class="logo__icon" src="./img/icons/logo.png" alt="logo" />
+          <img
+            class="logo__icon-productly"
+            src="./img/icons/logo-productly.png"
+            alt="logo-productly"
+          />
+        </a>
+
+        <div class="page-footer__box">
+          <div class="page-footer__text">Quick Links</div>
+          <ul>
+            <li class="page-footer__item"><a class="page-footer__link" href="">About Us</a></li>
+            <li class="page-footer__item"><a class="page-footer__link" href="">Blog</a></li>
+            <li class="page-footer__item"><a class="page-footer__link" href="">Contact</a></li>
+            <li class="page-footer__item"><a class="page-footer__link" href="">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="page-footer__box">
+          <div class="page-footer__text">Legal Stuff</div>
+          <ul>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="">Disclaimer</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="">Financing</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="">Privacy Policy</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="">Terms of Service</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__box-form">
+          <div class="page-footer__text page-footer__text_margin">
+            Knowing you're always on the best energy deal.
+          </div>
+          <form action="#">
+            <input class="page-footer__input" type="number" placeholder="Enter your phone Number" />
+            <button class="btn page-footer__btn">Sign up Now</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
