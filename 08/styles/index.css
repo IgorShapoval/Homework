@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
+
+:root {
+  /* Colors */
+  --c-main: #3c3c3c;
+  --c-activ: #18b5dc;
+  --c-bg-icon: #5dcbe6;
+  --c-card-name-text: #282528;
+  --c-card-text: #646464;
+  --c-white: #ffffff;
+  --c-bg-main: #f6f6f6;
+  --c-bg-after: #dddbdb;
+
+  /* Font-size */
+  --fz-16: 16px;
+  --fz-18: 18px;
+  --fz-20: 20px;
+  --fz-30: 30px;
+  --fz-34: 34px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+.container {
+  max-width: 1170px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 150px 0;
+}
+
+html,
+body {
+  font-family: "Lato", sans-serif;
+  font-size: var(--fz-16);
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--c-main);
+}
+
+.btn {
+  font-size: var(--fz-18);
+  font-weight: 400;
+  line-height: 1.22;
+  color: var(--c-main);
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--c-main);
+  padding: 10px 17px;
+  background-color: var(--c-white);
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--c-activ);
+  color: var(--c-white);
+  border: 1px solid var(--c-activ);
+}
+
+.logo {
+  font-family: "Train One", cursive;
+  font-size: var(--fz-30);
+  font-weight: 400;
+  line-height: 1.43;
+  color: var(--c-card-name-text);
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.nav__link {
+  display: block;
+  font-size: var(--fz-20);
+  color: var(--c-main);
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+.nav__link_active {
+  color: var(--c-activ);
+}
+
+.nav__link:hover {
+  color: var(--c-activ);
+}
+
+/* Header */
+
+.header {
+  padding: 10px 0;
+  position: relative;
+}
+
+.header__body {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.header__body::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  height: 1px;
+  background: var(--c-bg-after);
+}
+
+.header__btn-box {
+  display: flex;
+  align-items: center;
+}
+
+/* About */
+
+.about {
+  background-color: var(--c-bg-main);
+}
+
+.about__title {
+  font-size: var(--fz-34);
+  text-transform: uppercase;
+  line-height: 1.21;
+  letter-spacing: 0.13em;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.about__title::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 14px;
+  width: 45px;
+  height: 4px;
+  background-color: var(--c-bg-after);
+}
+
+.about__text {
+  max-width: 570px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 51px;
+}
+
+.about__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__item {
+  position: relative;
+}
+
+.about__img {
+  margin-bottom: 20px;
+}
+
+.about__item:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 63px;
+  right: 0;
+  left: 0;
+  background-color: var(--c-activ);
+}
+
+.about__name {
+  font-size: var(--fz-18);
+}
+
+.about__profesion {
+  font-size: var(--fz-18);
+  font-weight: 300;
+}
+
+.about__contacts-list {
+  position: absolute;
+  top: 114px;
+  left: 68px;
+  opacity: 0;
+}
+
+.about__contacts-link {
+  background-color: var(--c-bg-icon);
+  color: var(--c-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.about__contacts-link:hover {
+  background-color: var(--c-white);
+  color: var(--c-bg-icon);
+}
+
+.about__item:hover .about__contacts-list {
+  opacity: 1;
+}
+
+/* Footer */
+
+.footer {
+  padding: 32px 0;
+}
+
+.footer__container {
+  text-align: center;
+}
+
+.footer__logo {
+  margin-bottom: 11px;
+}
+
+.footer__nav {
+  margin-bottom: 9px;
+}
+
+.footer_list {
+  justify-content: center;
+}
+
+.footer__link {
+  font-size: var(--fz-18);
+}
+
+.contacts__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid var(--c-activ);
+  color: var(--c-activ);
+  transition: all 0.3s ease-in;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  background-color: var(--c-activ);
+  color: var(--c-white);
+}
+
+.contats__svg {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
