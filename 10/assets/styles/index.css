@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.71;
+  color: #000000;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+img {
+  vertical-align: top;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 70px;
+}
+
+.section:last-child {
+  padding-bottom: 90px;
+}
+
+.title {
+  font-family: "Francois One";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.suptitle {
+  font-family: "Farro";
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 0;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-bg {
+  background-color: #dadada;
+}
+
+/* Header */
+
+.header__container {
+  display: flex;
+  align-items: center;
+  padding: 13px 0;
+}
+
+.nav__list {
+  display: flex;
+  font-family: "Staatliches";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.27;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.nav__link {
+  padding: 17px 0;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: #dd9a1e;
+}
+
+.header__leng {
+  font-family: "Tourney";
+  font-weight: 600;
+  margin-right: 50px;
+  font-size: 22px;
+  line-height: 0.82;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 16px 0 17px 0;
+}
+
+.header__leng:hover,
+.header__leng:focus {
+  color: #dd9a1e;
+}
+
+.header__box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Main */
+
+.react__text {
+  margin-bottom: 40px;
+}
+
+.react__item:not(:last-child) {
+  margin-bottom: 40px;
+}
