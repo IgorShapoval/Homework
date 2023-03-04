@@ -30,7 +30,7 @@ img {
 }
 
 .body-container {
-  background: url(../img/bg-picture.png) no-repeat right 300px top 150px fixed;
+  background: url(../img/bg-picture.png) no-repeat right 150px fixed;
 }
 
 .container {
