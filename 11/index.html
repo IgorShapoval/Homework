@@ -1,48 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="container">
-            <div class="main__content">
-                <section class="section">
-                    <h2 class="title">Create an Account</h2>
-                    <form action="#">
-                        <div class="flex-wrapper">
-                            <div class="input --mr-10">
-                                <label class="input__label" for="firstName">First Name</label>
-                                <div class="input__form-el">
-                                    <input type="text" id="firstName">
-                                </div>
-                            </div>
-                            <div class="input">
-                                <label class="input__label" for="lastName">Last Name</label>
-                                <div class="input__form-el">
-                                    <input type="text" id="lastName">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="input">
-                            <label class="input__label" for="email">E-mail</label>
-                            <div class="input__form-el">
-                                <input type="email" id="email">
-                                <span class="input__text">We'll never share your email with anyone else.</span>
-                            </div>
-                        </div>
-                    </form>
-                </section>
-                
-                <section class="section">
-                    <h2 class="title">Profile</h2>
-                </section>
+      <div class="container">
+        <div class="main__content">
+          <section class="section">
+            <h2 class="title">Create an Account</h2>
+            <form action="#" class="form --mb-20">
+              <div class="flex-wrapper">
+                <div class="input --mr-10">
+                  <label class="input__label" for="firstName">First Name</label>
+                  <div class="input__form-el">
+                    <input type="text" id="firstName" />
+                  </div>
+                </div>
+                <div class="input">
+                  <label class="input__label" for="lastName">Last Name</label>
+                  <div class="input__form-el">
+                    <input type="text" id="lastName" />
+                  </div>
+                </div>
+              </div>
+              <div class="input --mb-20">
+                <label class="input__label" for="email">E-mail</label>
+                <div class="input__form-el">
+                  <input type="email" id="email" />
+                  <span class="input__text"
+                    >We'll never share your email with anyone else.</span
+                  >
+                </div>
+              </div>
+              <div class="input">
+                <div class="flex-wrapper">
+                  <input type="radio" name="gender" value="male" id="male" />
+                  <label
+                    class="input__label input__radio-label --mr-20"
+                    for="male"
+                    >Male</label
+                  >
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="female"
+                    id="female"
+                  />
+                  <label class="input__label input__radio-label" for="female"
+                    >Female</label
+                  >
+                </div>
+              </div>
+              <div class="flex-wrapper">
+                <div class="input --mr-10">
+                  <label class="input__label" for="country">Country</label>
+                  <div class="input__form-el">
+                    <select name="country" id="country">
+                      <option value="Select">Select</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input">
+                  <label class="input__label" for="city">City</label>
+                  <div class="input__form-el">
+                    <input type="text" id="city" />
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn --mb-22" type="submit">Sign Up</button>
+
+              <p class="form__text">
+                By clicking the 'Sign Up' button, you confirm that you accept
+                our
+                <a class="link" href="#">Terms of Use</a> and
+                <a class="link" href="#">Privacy Policy</a>.
+              </p>
+            </form>
+            <div class="login-text">
+              <span class="--mr-20">Have an account?</span>
+              <a class="link" href="#">Log In</a>
             </div>
+          </section>
+
+          <section class="section">
+            <h2 class="title">Profile</h2>
+            <form action="#">
+              <div class="foto --mb-20">
+                <div class="--flex-center">
+                  <img
+                    src="./assets/img/Photo.jpg"
+                    alt="Photo"
+                    class="foto__img --mr-20"
+                  />
+                  <div class="--flex">
+                    <div class="foto__input">
+                      <input class="foto__input-file" id="foto" readonly />
+                      <svg
+                        class="foto__svg-camera"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M4.78001 3.33333L6.00001 2H10L11.22 3.33333H13.3333C14.0667 3.33333 14.6667 3.93333 14.6667 4.66667V12.6667C14.6667 13.4 14.0667 14 13.3333 14H2.66668C1.93334 14 1.33334 13.4 1.33334 12.6667V4.66667C1.33334 3.93333 1.93334 3.33333 2.66668 3.33333H4.78001ZM4.66668 8.66667C4.66668 10.5067 6.16001 12 8.00001 12C9.84001 12 11.3333 10.5067 11.3333 8.66667C11.3333 6.82667 9.84001 5.33333 8.00001 5.33333C6.16001 5.33333 4.66668 6.82667 4.66668 8.66667ZM8.00001 10.8C9.17822 10.8 10.1333 9.84487 10.1333 8.66667C10.1333 7.48846 9.17822 6.53333 8.00001 6.53333C6.8218 6.53333 5.86668 7.48846 5.86668 8.66667C5.86668 9.84487 6.8218 10.8 8.00001 10.8Z"
+                          fill="#969696"
+                        />
+                      </svg>
+                      <span class="input__text">Up to 1 MB (300x300 px)</span>
+                    </div>
+                    <button class="foto__btn" type="button">
+                      <svg
+                        class="foto__svg-delete"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M4.00001 12.6667C4.00001 13.4 4.60001 14 5.33334 14H10.6667C11.4 14 12 13.4 12 12.6667V4.66667H4.00001V12.6667ZM12.6667 2.66667H10.3333L9.66668 2H6.33334L5.66668 2.66667H3.33334V4H12.6667V2.66667Z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-wrapper">
+                <div class="input --mr-10">
+                  <label class="input__label" for="name">Name</label>
+                  <div class="input__form-el">
+                    <input type="text" id="name" />
+                  </div>
+                </div>
+                <div class="input">
+                  <label class="input__label" for="email">E-mail</label>
+                  <div class="input__form-el">
+                    <input type="email" id="email" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-wrapper">
+                <div class="input --mr-10">
+                  <label class="input__label" for="country">Country</label>
+                  <div class="input__form-el">
+                    <select name="country" id="country">
+                      <option value="Select">Select</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input">
+                  <label class="input__label" for="city">City</label>
+                  <div class="input__form-el">
+                    <input type="text" id="city" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-wrapper">
+                <div class="input --mr-10">
+                  <label class="input__label" for="code">Zip Code</label>
+                  <div class="input__form-el">
+                    <input type="text" id="code" />
+                  </div>
+                </div>
+                <div class="input">
+                  <label class="input__label" for="number">Phone Number</label>
+                  <div class="input__form-el">
+                    <input type="number" id="number" />
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn_profile" type="submit">Update</button>
+            </form>
+          </section>
         </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>

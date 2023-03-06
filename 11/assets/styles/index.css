@@ -1,106 +1,262 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
 :root {
-    --form-c-title: #1C1C1C;
-    --form-c-main: #545454;
-    --form-c-text: #969696;
-    --form-c-blue: #007BFF;
-    --form-c-white: #FFFFFF;
-    --form-c-black: #000000;
-    --form-c-border: #E4E4E4;
-    --form-c-bg: #F7F7F7;
+  --form-c-title: #1c1c1c;
+  --form-c-main: #545454;
+  --form-c-text: #969696;
+  --form-c-blue: #007bff;
+  --form-c-white: #ffffff;
+  --form-c-black: #000000;
+  --form-c-border: #e4e4e4;
+  --form-c-bg: #f7f7f7;
+  --form-c-hover: #ffa600d5;
 
-    --fs-13: 13px;
-    --fs-15: 15px;
-    --fs-24: 24px;
+  --fs-13: 13px;
+  --fs-15: 15px;
+  --fs-24: 24px;
 }
-
 .--mr-10 {
-    margin-right: 10px;
+  margin-right: 10px;
+}
+.--mb-20 {
+  margin-bottom: 20px;
+}
+.--mb-22 {
+  margin-bottom: 22px;
+}
+.--mr-20 {
+  margin-right: 20px;
+}
+.--flex {
+  display: flex;
+}
+.--flex-center {
+  display: flex;
+  align-items: center;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: var(--fs-15);
+  color: var(--form-c-main);
+  background-color: var(--form-c-bg);
+  line-height: 1.38;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
 }
 
 .container {
-    max-width: 1170px;
-    width: 90%;
-    margin: 0 auto;
+  max-width: 1170px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .main__content {
-    display: flex;
-    justify-content: space-between;
-    padding: 55px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 55px 0;
 }
 
 .section {
-    max-width: 570px;
-    width: 90%;
-    background-color: var(--form-c-white);
-    padding: 35px 34px;
-}
-
-.flex-wrapper {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-html,body {
-    font-family: 'Roboto', sans-serif;
-    font-size: var(--fs-15);
-    color: var(--form-c-main);
-    background-color: var(--form-c-bg);
-    line-height: 1.38;
-    font-weight: 400;
+  max-width: 570px;
+  width: 90%;
+  background-color: var(--form-c-white);
+  padding: 35px 34px;
 }
 
 .title {
-    font-weight: 500;
-    font-size: var(--fs-24);
-    line-height: 1.33;
-    color: var(--form-c-title);
-    margin-bottom: 20px;
+  font-weight: 500;
+  font-size: var(--fs-24);
+  line-height: 1.33;
+  color: var(--form-c-title);
+  margin-bottom: 20px;
 }
 
-input:not([type=checkbox], [type=radio]) {
-    width: 100%;
-    font-size: var(--fs-15);
-    color: var(--form-c-main);
-    padding: 8px 10px;
-    background-color: var(--form-c-white);
-    border: 1px solid var(--form-c-border);
-    border-radius: 6px;
-    outline: none;
+.flex-wrapper {
+  display: flex;
+  margin-bottom: 20px;
 }
 
-input:focus:not([type=checkbox], [type=radio]) {
-    border-color: var(--form-c-blue);
+.btn {
+  width: 100%;
+  line-height: 36px;
+  background-color: var(--form-c-blue);
+  color: var(--form-c-white);
+  border: 1px solid var(--form-c-border);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.btn:hover,
+.btn:focus,
+.foto__btn:hover,
+.foto__btn:focus {
+  background-color: var(--form-c-hover);
+}
+
+.link {
+  color: var(--form-c-blue);
+  transition: all 0.4s;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--form-c-hover);
+}
+
+.form::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--form-c-border);
 }
 
 .input {
-    width: 100%;
-    margin-bottom: 20px;
+  width: 100%;
 }
 
 .input__label {
-    display: block;
-    line-height: 1.47;
-    margin-bottom: 7px;
+  display: block;
+  line-height: 1.47;
+  margin-bottom: 7px;
+
+  cursor: pointer;
 }
 
 .input__form-el {
-
 }
 
 .input__text {
-    display: inline-block;
-    font-size: var(--fs-13);
-    margin-top: 7px;
+  display: inline-block;
+  font-size: var(--fs-13);
+  color: var(--form-c-text);
+  margin-top: 7px;
 }
 
+input:not([type="checkbox"], [type="radio"]),
+select {
+  width: 100%;
+  font-size: var(--fs-15);
+  color: var(--form-c-main);
+  padding: 8px 10px;
+  background-color: var(--form-c-white);
+  border: 1px solid var(--form-c-border);
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+}
 
+input:focus:not([type="checkbox"], [type="radio"]),
+select:focus {
+  border-color: var(--form-c-blue);
+}
 
+input[type="radio"] {
+  display: none;
+}
+
+.input__radio-label {
+  position: relative;
+  margin-bottom: 0;
+  padding-left: 28px;
+}
+
+.input__radio-label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: var(--form-c-white);
+  border: 1px solid var(--form-c-border);
+  border-radius: 50%;
+}
+
+.input__radio-label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--form-c-white);
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + .input__radio-label::before {
+  border: 1px solid var(--form-c-blue);
+  background-color: var(--form-c-blue);
+}
+
+.form__text {
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-text {
+  text-align: center;
+}
+
+/* Profile */
+
+.foto__input {
+  position: relative;
+  max-width: 143px;
+  margin-right: 10px;
+}
+
+input.foto__input-file {
+  font-size: var(--fs-15);
+  color: var(--form-c-main);
+  padding: 6px 32px 6px 10px;
+  background-color: var(--form-c-white);
+  border: 1px solid var(--form-c-border);
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.foto__svg-camera {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+
+.foto__btn {
+  width: 30px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--form-c-border);
+  border-radius: 6px;
+  background-color: var(--form-c-white);
+  cursor: pointer;
+  transition: all 0.4s;
+  fill: var(--form-c-text);
+}
+
+.foto__btn:hover .foto__svg-delete,
+.foto__btn:focus .foto__svg-delete {
+  fill: var(--form-c-white);
+}
+
+.btn_profile {
+  max-width: 150px;
+}
