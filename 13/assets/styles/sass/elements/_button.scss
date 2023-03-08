@@ -1,0 +1,27 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    color: $c-second-text;
+    font-size: $fs-main-text;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid $c-gold;
+    padding: 5px 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.5);
+
+    &:hover,
+    &:focus {
+        border: 1px solid $c-main-text;
+        color: $c-gold;
+    }
+
+    &:active {
+        position: relative;
+        top: 3px;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+}

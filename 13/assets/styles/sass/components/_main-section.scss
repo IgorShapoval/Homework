@@ -1,0 +1,124 @@
+.team-member {
+    display: flex;
+    justify-content: space-between;
+
+    &__body {
+        padding: 65px 85px 65px 0;
+        border-right: 1px solid $c-gold;
+    }
+
+    &__foto {
+        position: relative;
+    }
+
+    &__img {
+        padding: 15px;
+    }
+
+    &__border1 {
+        width: 100px;
+        height: 100px;
+        border-top: 1px solid $c-gold;
+        border-left: 1px solid $c-gold;
+        position: absolute;
+        top: 0;
+    }
+
+    &__border2 {
+        width: 100px;
+        height: 100px;
+        border-top: 1px solid $c-gold;
+        border-right: 1px solid $c-gold;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__border3 {
+        width: 100px;
+        height: 100px;
+        border-bottom: 1px solid $c-gold;
+        border-left: 1px solid $c-gold;
+        position: absolute;
+        bottom: 0;
+    }
+
+    &__border4 {
+        width: 100px;
+        height: 100px;
+        border-bottom: 1px solid $c-gold;
+        border-right: 1px solid $c-gold;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    &__info {
+        padding: 70px 0 70px 85px;
+    }
+
+    &__name {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-size: $fs-36;
+        line-height: 1.17;
+        text-transform: capitalize;
+        color: $c-second-text;
+        position: relative;
+        margin-bottom: 60px;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 1px;
+            background-color: $c-gold;
+            position: absolute;
+            left: 50%;
+            bottom: -30px;
+            margin-left: -50px;
+        }
+    }
+
+    &__position {
+        display: inline-block;
+        font-size: $fs-second-text;
+        line-height: 1.5;
+        text-transform: capitalize;
+        color: $c-second-text;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+    }
+
+    &__line {
+        display: block;
+        margin: 0 auto;
+        width: 20px;
+        height: 4px;
+        background-color: $c-gold;
+        position: relative;
+        margin-bottom: 25px;
+
+        &::after,
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 4px;
+            background-color: $c-gold;
+        }
+
+        &::after {
+            position: absolute;
+            left: 25px;
+        }
+
+        &::before {
+            position: absolute;
+            right: 25px;
+        }
+    }
+}

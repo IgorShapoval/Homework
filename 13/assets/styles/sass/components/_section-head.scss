@@ -1,0 +1,52 @@
+.section-head {
+    margin-bottom: 40px;
+}
+
+.team {
+    text-align: center;
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: $fs-subtitle;
+        line-height: 1.33;
+        text-transform: uppercase;
+        color: $c-subtitle;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-size: $fs-main-title;
+        line-height: 1.1;
+        text-transform: uppercase;
+        color: $c-gold;
+        margin-bottom: 40px;
+    }
+
+    &__icon {
+        display: inline-block;
+        position: relative;
+
+        &::after,
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 210px;
+            height: 1px;
+            background-color: $c-gold;
+        }
+
+        &::after {
+            position: absolute;
+            top: 10px;
+            margin-left: 5px;
+        }
+
+        &::before {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+        }
+    }
+}

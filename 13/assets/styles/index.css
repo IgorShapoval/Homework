@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;500&family=Roboto:wght@900&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #333333;
+}
+
+.container {
+  max-width: 1030px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.section {
+  padding: 121px 0;
+}
+
+.section-head {
+  margin-bottom: 40px;
+}
+
+.team {
+  text-align: center;
+}
+.team__subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: #898F8F;
+  margin-bottom: 15px;
+}
+.team__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #FFCC00;
+  margin-bottom: 40px;
+}
+.team__icon {
+  display: inline-block;
+  position: relative;
+}
+.team__icon::after, .team__icon::before {
+  content: "";
+  display: inline-block;
+  width: 210px;
+  height: 1px;
+  background-color: #FFCC00;
+}
+.team__icon::after {
+  position: absolute;
+  top: 10px;
+  margin-left: 5px;
+}
+.team__icon::before {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+}
+
+.team-member {
+  display: flex;
+  justify-content: space-between;
+}
+.team-member__body {
+  padding: 65px 85px 65px 0;
+  border-right: 1px solid #FFCC00;
+}
+.team-member__foto {
+  position: relative;
+}
+.team-member__img {
+  padding: 15px;
+}
+.team-member__border1 {
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid #FFCC00;
+  border-left: 1px solid #FFCC00;
+  position: absolute;
+  top: 0;
+}
+.team-member__border2 {
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid #FFCC00;
+  border-right: 1px solid #FFCC00;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.team-member__border3 {
+  width: 100px;
+  height: 100px;
+  border-bottom: 1px solid #FFCC00;
+  border-left: 1px solid #FFCC00;
+  position: absolute;
+  bottom: 0;
+}
+.team-member__border4 {
+  width: 100px;
+  height: 100px;
+  border-bottom: 1px solid #FFCC00;
+  border-right: 1px solid #FFCC00;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.team-member__info {
+  padding: 70px 0 70px 85px;
+}
+.team-member__name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.17;
+  text-transform: capitalize;
+  color: #666666;
+  position: relative;
+  margin-bottom: 60px;
+}
+.team-member__name::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: #FFCC00;
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  margin-left: -50px;
+}
+.team-member__position {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #666666;
+  margin-bottom: 30px;
+}
+.team-member__text {
+  margin-bottom: 20px;
+}
+.team-member__line {
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+  height: 4px;
+  background-color: #FFCC00;
+  position: relative;
+  margin-bottom: 25px;
+}
+.team-member__line::after, .team-member__line::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 4px;
+  background-color: #FFCC00;
+}
+.team-member__line::after {
+  position: absolute;
+  left: 25px;
+}
+.team-member__line::before {
+  position: absolute;
+  right: 25px;
+}/*# sourceMappingURL=index.css.map */
