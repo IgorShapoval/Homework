@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <title>Sidebar</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar__header">
+          <a class="sidebar__logo" href="#">
+            <svg class="icon">
+              <use xlink:href="./assets/img/icons/icons.svg#icon-icon"></use>
+            </svg>
+            <span class="sidebar__logo-text">LightBoard</span>
+          </a>
+          <button
+            type="button"
+            class="sidebar__btn"
+            id="sidebar__btn"
+            onclick="toggle()"
+          >
+            <svg class="icon">
+              <use xlink:href="./assets/img/icons/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="sidebar__body">
+          <ul class="sidebar__list sidebar-menu">
+            <li class="sidebar-menu__item">
+              <svg class="icon">
+                <use
+                  xlink:href="./assets/img/icons/icons.svg#icon-dashboard"
+                ></use>
+              </svg>
+              <span class="sidebar-menu__text">Dashboard</span>
+            </li>
+            <li class="sidebar-menu__item sidebar-menu__title">
+              <span class="sidebar-menu__title-text">Apps</span>
+              <span class="sidebar-menu__title-line"></span>
+            </li>
+            <li class="sidebar-menu__item">
+              <a href="#" class="sidebar-menu__link">
+                <div class="sidebar-menu__box">
+                  <svg class="icon">
+                    <use
+                      xlink:href="./assets/img/icons/icons.svg#icon-mail"
+                    ></use>
+                  </svg>
+                  <span class="sidebar-menu__counter">10</span>
+                </div>
+
+                <span class="sidebar-menu__text">Email</span>
+              </a>
+            </li>
+            <li class="sidebar-menu__item">
+              <a href="#" class="sidebar-menu__link">
+                <div class="sidebar-menu__box">
+                  <svg class="icon">
+                    <use
+                      xlink:href="./assets/img/icons/icons.svg#icon-bubble"
+                    ></use>
+                  </svg>
+                  <span class="sidebar-menu__counter --bg-red">10</span>
+                </div>
+                <span class="sidebar-menu__text">Chats</span>
+              </a>
+            </li>
+            <li class="sidebar-menu__item">
+              <a href="#" class="sidebar-menu__link">
+                <div class="sidebar-menu__box">
+                  <svg class="icon">
+                    <use
+                      xlink:href="./assets/img/icons/icons.svg#icon-calendar"
+                    ></use>
+                  </svg>
+                  <span class="sidebar-menu__counter --bg-yellow">5</span>
+                </div>
+                <span class="sidebar-menu__text">Calendar</span>
+              </a>
+            </li>
+            <li class="sidebar-menu__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="icon">
+                  <use
+                    xlink:href="./assets/img/icons/icons.svg#icon-news"
+                  ></use>
+                </svg>
+                <span class="sidebar-menu__text">News</span>
+              </a>
+            </li>
+            <li class="sidebar-menu__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="icon">
+                  <use
+                    xlink:href="./assets/img/icons/icons.svg#icon-study-1"
+                  ></use>
+                </svg>
+                <span class="sidebar-menu__text">Knowledge</span>
+              </a>
+            </li>
+            <li class="sidebar-menu__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="icon">
+                  <use
+                    xlink:href="./assets/img/icons/icons.svg#icon-stack"
+                  ></use>
+                </svg>
+                <span class="sidebar-menu__text">File manager</span>
+              </a>
+            </li>
+            <li class="sidebar-menu__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="icon">
+                  <use
+                    xlink:href="./assets/img/icons/icons.svg#icon-location"
+                  ></use>
+                </svg>
+                <span class="sidebar-menu__text">Leaflet Maps</span>
+              </a>
+            </li>
+            <li class="sidebar-menu__item sidebar-menu__title">
+              <span class="sidebar-menu__title-text">Auth pages</span>
+              <span class="sidebar-menu__title-line"></span>
+            </li>
+            <li class="sidebar-menu__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="icon">
+                  <use
+                    xlink:href="./assets/img/icons/icons.svg#icon-profile"
+                  ></use>
+                </svg>
+                <span class="sidebar-menu__text">Profile</span>
+              </a>
+            </li>
+            <li class="sidebar-menu__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="icon">
+                  <use
+                    xlink:href="./assets/img/icons/icons.svg#icon-lock"
+                  ></use>
+                </svg>
+                <span class="sidebar-menu__text">Permissions</span>
+              </a>
+            </li>
+            <li class="sidebar-menu__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="icon">
+                  <use
+                    xlink:href="./assets/img/icons/icons.svg#icon-log-out"
+                  ></use>
+                </svg>
+                <span class="sidebar-menu__text">Log Out</span>
+              </a>
+            </li>
+            <li class="sidebar-menu__item sidebar-menu__title">
+              <span class="sidebar-menu__title-text">User Interface</span>
+              <span class="sidebar-menu__title-line"></span>
+            </li>
+            <li class="sidebar-menu__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="icon">
+                  <use xlink:href="./assets/img/icons/icons.svg#icon-eye"></use>
+                </svg>
+                <span class="sidebar-menu__text">Feather</span>
+              </a>
+            </li>
+            <li class="sidebar-menu__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="icon">
+                  <use
+                    xlink:href="./assets/img/icons/icons.svg#icon-wallet"
+                  ></use>
+                </svg>
+                <span class="sidebar-menu__text">Ecommerce</span>
+              </a>
+            </li>
+            <li class="sidebar-menu__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="icon">
+                  <use xlink:href="./assets/img/icons/icons.svg#icon-lab"></use>
+                </svg>
+                <span class="sidebar-menu__text">Components</span>
+              </a>
+            </li>
+            <li class="sidebar-menu__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="icon">
+                  <use
+                    xlink:href="./assets/img/icons/icons.svg#icon-page"
+                  ></use>
+                </svg>
+                <span class="sidebar-menu__text">Pages</span>
+              </a>
+            </li>
+            <li class="sidebar-menu__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="icon">
+                  <use xlink:href="./assets/img/icons/icons.svg#icon-pen"></use>
+                </svg>
+                <span class="sidebar-menu__text">Editor</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="container">
+        <header class="header">
+          <div class="header__body">
+            <div class="header__panel">
+              <ul class="header__menu header-menu">
+                <li class="header-menu__item">
+                  <a href="" class="header-menu__link">
+                    <svg class="icon">
+                      <use
+                        xlink:href="./assets/img/icons/icons.svg#icon-mail"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-menu__item">
+                  <a href="" class="header-menu__link">
+                    <svg class="icon">
+                      <use
+                        xlink:href="./assets/img/icons/icons.svg#icon-bubble"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-menu__item">
+                  <a href="" class="header-menu__link">
+                    <svg class="icon">
+                      <use
+                        xlink:href="./assets/img/icons/icons.svg#icon-calendar"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-menu__item">
+                  <a href="" class="header-menu__link">
+                    <svg class="icon">
+                      <use
+                        xlink:href="./assets/img/icons/icons.svg#icon-star"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="header__settings">
+              <div class="header__leng">
+                <svg class="icon">
+                  <use
+                    xlink:href="./assets/img/icons/icons.svg#icon-lang-icon"
+                  ></use>
+                </svg>
+                <span>English</span>
+              </div>
+              <ul class="header__settings-menu header-menu">
+                <li class="header-menu__item">
+                  <a href="" class="header-menu__link">
+                    <svg class="icon">
+                      <use
+                        xlink:href="./assets/img/icons/icons.svg#icon-change-theme"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-menu__item">
+                  <a href="" class="header-menu__link">
+                    <svg class="icon">
+                      <use
+                        xlink:href="./assets/img/icons/icons.svg#icon-search"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-menu__item">
+                  <a href="" class="header-menu__link">
+                    <svg class="icon">
+                      <use
+                        xlink:href="./assets/img/icons/icons.svg#icon-set"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <div class="header__user">
+                <a class="header__user-link" href="#">
+                  <img src="./assets/img/photo.png" alt="photo" />
+                  <span class="header__user-status"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+    <script>
+      function toggle() {
+        const sidebarBtn = document.getElementById("sidebar__btn");
+        sidebarBtn.classList.toggle("is-active");
+        const sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("is-close");
+      }
+    </script>
+  </body>
+</html>
