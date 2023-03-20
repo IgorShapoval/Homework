@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.cards__list {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.card__back,
+.card__front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all 1s;
+  backface-visibility: hidden;
+}
+
+.card__front {
+  z-index: 2;
+}
+
+.card__back {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+
+.card__back {
+  transform: rotateY(180deg);
+}
+
+.card__front img {
+  width: 100%;
+  height: 100%;
+}
+
+.cadr__box {
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cadr__box_down {
+  margin-left: auto;
+  transform: rotateX(180deg);
+}
+
+.card__suit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+}
+
+.card:hover .card__front {
+  transform: rotateY(180deg);
+}
+.card:hover .card__back {
+  transform: rotateY(360deg);
+}
+
+.--c-red {
+  color: red;
+}
