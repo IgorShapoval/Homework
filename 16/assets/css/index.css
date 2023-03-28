@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+  background-color: #000000;
+}
+
+.icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer {
+  padding: 100px 0;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 45px;
+}
+.footer__title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer__title::after {
+  content: "";
+  display: block;
+  width: 230px;
+  height: 1px;
+  background-color: #ffffff;
+  margin: 20px auto 0 auto;
+}
+.footer__list {
+  margin-bottom: 70px;
+}
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-list__item {
+}
+.social-list__link {
+  display: block;
+  padding: 15px;
+  transition: all 0.5s linear;
+  color: #ffffff;
+}
+
+.footer__copyright a {
+  transition: all 0.5s linear;
+  color: #00c7fc;
+  transition: all 0.5s linear;
+}
+
+.footer__copyright a:hover,
+.footer__copyright a:focus {
+  color: #ffffff;
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+  color: #00c7fc;
+}
