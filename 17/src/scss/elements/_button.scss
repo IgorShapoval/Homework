@@ -1,0 +1,22 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: $fs-18;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    color: $c-white;
+    padding: 20px 50px;
+    background-color: $c-red;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: none;
+    transition: all 0.4s;
+
+    &:hover {
+        background-color: $c-blue-light;
+    }
+}

@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Bebas Neue Book";
+    src: url("./../fonts/BabasNeue/BebasNeue-Book.woff2") format("woff2"),
+        url("./../fonts/BabasNeue/BebasNeue-Book.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("./../fonts/BabasNeue/BebasNeue-Regular.woff2") format("woff2"),
+        url("./../fonts/BabasNeue/BebasNeue-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("./../fonts/BabasNeue/BebasNeue-Thin.woff2") format("woff2"),
+        url("./../fonts/BabasNeue/BebasNeue-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("./../fonts/Roboto/Roboto-Light.woff2") format("woff2"),
+        url("./../fonts/Roboto/Roboto-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}

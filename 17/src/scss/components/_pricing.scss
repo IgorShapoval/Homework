@@ -1,0 +1,155 @@
+.pricing {
+    padding: 120px 0;
+    &__body {
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 370px;
+        background-color: $c-gary;
+        text-align: center;
+        transition: all 0.4s;
+        position: relative;
+
+        &:hover {
+            transform: scale(1.1);
+
+            .pricing__btn {
+                bottom: 65px;
+            }
+
+            .pricing__order {
+                visibility: visible;
+            }
+
+            .pricing__item-footer {
+                height: 92px;
+            }
+
+            .pricing__popular {
+                &::after {
+                    visibility: visible;
+                    z-index: 10;
+                }
+            }
+        }
+    }
+    &__item-header {
+        margin-bottom: 30px;
+        padding-top: 40px;
+    }
+    &__item-body {
+        background: url(./../img/bg-image.png);
+        background-repeat: no-repeat;
+        padding: 40px 0 60px 0;
+    }
+
+    &__item-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 58px;
+        position: relative;
+        transition: all 0.4s;
+    }
+
+    &__popular {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        transition: all 0.4s;
+
+        &::after {
+            content: "";
+            background-image: url(./../img/Tooltip.png);
+            display: block;
+            width: 100px;
+            height: 30px;
+            position: absolute;
+            top: 14px;
+            left: 58px;
+            visibility: hidden;
+            transition: all 0.4s;
+        }
+    }
+    &__price {
+        font-family: "Bebas Neue";
+        font-weight: 100;
+        font-size: $fs-60;
+        line-height: 1;
+        letter-spacing: 0.08em;
+        color: $c-black;
+        position: relative;
+        margin-bottom: 20px;
+
+        &::before {
+            content: "$";
+            font-size: $fs-24;
+            color: $c-black-light;
+            position: absolute;
+            left: 136px;
+        }
+
+        &::after {
+            content: "/HR";
+            font-family: "Bebas Neue";
+            font-style: normal;
+            font-weight: 300;
+            font-size: $fs-16;
+            line-height: 1;
+            letter-spacing: 0.08em;
+            color: $c-black;
+        }
+    }
+    &__name {
+        font-family: "Bebas Neue";
+        font-weight: 400;
+        font-size: $fs-24;
+        line-height: 28px;
+        letter-spacing: 0.04em;
+        color: $c-black;
+    }
+
+    &__icon {
+        margin-bottom: 40px;
+    }
+    &__option-list {
+    }
+
+    &__order {
+        font-family: "Roboto";
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 1.64;
+        letter-spacing: 0.04em;
+        color: #a9a9a9;
+        visibility: hidden;
+        padding-top: 20px;
+    }
+
+    &__btn {
+        position: absolute;
+        bottom: -28px;
+        transition: all 0.4s;
+    }
+}
+
+.option-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 100px;
+    &__item {
+        display: flex;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-size: $fs-16;
+        line-height: 1.25;
+        letter-spacing: 0.04em;
+        color: $c-black;
+    }
+}
