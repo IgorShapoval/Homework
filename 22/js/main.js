@@ -118,13 +118,13 @@ const clock = {
   second: new Date().getSeconds(),
   getTime() {
     if (String(this.minute).length < 2) {
-      this.minute = Number("0" + this.minute);
+      this.minute = "0" + this.minute;
     }
     if (String(this.second).length < 2) {
-      this.second = Number("0" + this.second);
+      this.second = "0" + this.second;
     }
     if (String(this.hour).length < 2) {
-      this.hour = Number("0" + this.hour);
+      this.hour = "0" + this.hour;
     }
     return `${this.hour}:${this.minute}:${this.second}`;
   },
@@ -171,7 +171,7 @@ console.log(clock);
 console.log(clock.getTime());
 console.log(clock.setHour(13));
 console.log(clock.getTime());
-console.log(clock.setMinute(35));
+console.log(clock.setMinute(5));
 console.log(clock.getTime());
 console.log(clock.setSecond(120));
 console.log(clock.getTime());
