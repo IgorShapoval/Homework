@@ -128,3 +128,4 @@ function allPriceNotBuy() {
 }
 
 console.log(allPriceNotBuy());
+console.log(shoppingList.milk.sdfsd);
