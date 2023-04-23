@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px 0 50px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.form-inline {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.form-control {
+  display: inline-block;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.films-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.films-list__item {
+  max-width: 220px;
+  text-align: center;
+}
+
+.erorr {
+  color: red;
+  margin: 0 auto;
+  font-size: 50px;
+}
+
+.pagination {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination span {
+  font-size: 30px;
+}
+
+.pagination.is-visible {
+  display: flex;
+}
