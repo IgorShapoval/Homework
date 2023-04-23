@@ -32,10 +32,10 @@ function getFilms() {
       console.log(data);
       if (data.results.length <= 0) {
         filmsListRef.innerHTML = "<p class='erorr'>Movie not found!</p>";
-        paginationRef.classList.toggle("is-visible");
+        paginationRef.classList.remove("is-visible");
       } else {
         clearFilmList();
-        paginationRef.classList.toggle("is-visible");
+        paginationRef.classList.add("is-visible");
         return appendMarkupFilmsList(data.results);
       }
     })
