@@ -58,3 +58,13 @@ ul {
 .pagination.is-visible {
   display: flex;
 }
+
+.modal-content {
+  width: 800px;
+  padding: 20px;
+}
+
+.film-info {
+  display: flex;
+  gap: 20px;
+}

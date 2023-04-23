@@ -16,6 +16,27 @@
   </head>
   <body>
     <div class="container">
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <form class="form-inline">
         <input
           class="form-control mr-sm-2"
@@ -27,7 +48,11 @@
         <button type="submit" class="btn btn-primary">Search</button>
       </form>
 
-      <ul class="films-list"></ul>
+      <ul
+        class="films-list"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      ></ul>
 
       <ul class="pagination pagination-lg">
         <li class="page-item">
