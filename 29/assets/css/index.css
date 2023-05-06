@@ -1,0 +1,37 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.clock-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clock-list__item {
+  width: 400px;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.clock-list__name {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.clock-list__time {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.form-clock {
+  margin-bottom: 40px;
+}
+
+.buttons {
+  justify-content: center;
+}
